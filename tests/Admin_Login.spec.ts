@@ -17,4 +17,5 @@ test('test', async ({ page }) => {
   await page.locator('input[type="file"]').setInputFiles(pdfPath);
   await page.getByRole('button', { name: 'Submit' }).click();
   // uyfj
+  // await page.getByRole('button', { name: 'Submit' }).click();
  });

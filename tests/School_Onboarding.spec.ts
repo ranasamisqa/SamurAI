@@ -14,8 +14,8 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Enter email address' }).fill('steve.hrmanager@yopmail.com');
   await page.getByRole('textbox', { name: 'Phone' }).click();
   await page.getByRole('textbox', { name: 'Phone' }).fill('+974 3554 2200');
-  await page.locator('div').filter({ hasText: /^Select your region$/ }).nth(3).click();
-  await page.getByRole('option', { name: 'Al Daayen' }).click();
+  // await page.locator('div').filter({ hasText: /^Select your region$/ }).nth(3).click();
+  // await page.getByRole('option', { name: 'Al Daayen' }).click();
   await page.locator('.DropdownOptionContainer.undefined__input-container').click();
   await page.getByRole('option', { name: 'Al Wakrah' }).click();
   await page.getByRole('textbox', { name: 'Enter address here' }).click();

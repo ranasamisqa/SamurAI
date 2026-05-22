@@ -10,7 +10,7 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Login to Admin' }).click();
   await page.getByRole('heading', { name: 'Welcome, Admin' }).getByRole('img').click();
   await page.getByRole('link', { name: 'School Intake List' }).click();
-  await page.getByRole('row', { name: 'KPS Rana Sami +' }).getByRole('button').click();
+  await page.getByRole('row', { name: 'APSACS Steve Smith +' }).getByRole('button').click();
   await page.locator('.DropdownOptionContainer.undefined__input-container').click();
   await page.getByRole('option', { name: 'Al Shamal' }).click();
   const pdfPath = path.resolve("D:\\Rana Samiuddin\\Automation\\Software Testing Strategies.pdf");

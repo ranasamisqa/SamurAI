@@ -16,6 +16,4 @@ test('test', async ({ page }) => {
   const pdfPath = path.resolve("D:\\Rana Samiuddin\\Automation\\Software Testing Strategies.pdf");
   await page.locator('input[type="file"]').setInputFiles(pdfPath);
   await page.getByRole('button', { name: 'Submit' }).click();
-  // uyfj
-  // await page.getByRole('button', { name: 'Submit' }).click();
  });
